@@ -34,9 +34,15 @@
 
 
 ## 📷 결과물
+RTL analysis schematic
 <img width="1956" height="781" alt="image" src="https://github.com/user-attachments/assets/c2a719fb-462b-4278-ab31-060529197834" />
 
+Slice, DSP, MUX 개수
 <img width="1330" height="793" alt="image" src="https://github.com/user-attachments/assets/5dfd4fd3-f5bb-44a8-a090-f856a562adac" />
+
+신호등 결과
+<img width="1248" height="480" alt="image" src="https://github.com/user-attachments/assets/e6d4da5b-0132-48c3-811f-c038a7e1167c" />
+<img width="1373" height="490" alt="image" src="https://github.com/user-attachments/assets/90308071-ceec-4f7c-a480-07449a0bfd8e" />
 
 ---
 
