@@ -54,6 +54,8 @@
 > 아래 이미지는 프로젝트 당시 발표 자료 일부를 발췌한 것입니다.
 
 ![로봇 외형 및 구성]<img width="1104" height="1028" alt="image" src="https://github.com/user-attachments/assets/900acc43-ba5e-4b71-b880-1b24a5e52720" />
+<img width="1521" height="884" alt="image" src="https://github.com/user-attachments/assets/436a0df9-8ba2-46a9-9140-00534238656b" />
+
 
 *(전방 모터, 중앙 쿨러, OLED 위치 표시)*
 
