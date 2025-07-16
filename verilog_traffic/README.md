@@ -4,6 +4,7 @@
 ## 📖 개요
 - **기간**: (예: 2023.08 ~ 2023.12)
 - **기술 스택**: Verilog HDL, FPGA (Vivado 사용), FSM 설계, LCD 제어
+- ✅ - **사용 보드**: COMBO 2 DLD (Xilinx Spartan‑7 XC7S75F FGG484-1 탑재)
 
 
 이 프로젝트는 **FPGA 상에서 동작하는 신호등 제어기**를 Verilog로 구현한 것입니다.  
@@ -28,7 +29,7 @@
 ## 🛠 실행 / 사용 방법
 1. Vivado에서 프로젝트를 생성 후, `traffic.v` 및 관련 모듈 파일(`clock.v`, `statework.v`, `lcdstate.v`, `LCD.v`)을 추가합니다.
 2. 시뮬레이션(Testbench)으로 FSM 동작을 검증합니다.
-3. FPGA 보드(Digilent Nexys 등)에 업로드 후 DIP 스위치 및 버튼으로 제어합니다.
+3. FPGA 보드(COMBO 2 DLD)에 업로드 후 DIP 스위치 및 버튼으로 제어합니다.
 
 ---
 
