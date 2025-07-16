@@ -53,13 +53,16 @@
 ## 📷 결과물
 > 아래 이미지는 프로젝트 당시 발표 자료 일부를 발췌한 것입니다.
 
-![로봇 외형 및 구성](docs/robot_overview.jpg)
+![로봇 외형 및 구성]<img width="1104" height="1028" alt="image" src="https://github.com/user-attachments/assets/900acc43-ba5e-4b71-b880-1b24a5e52720" />
+
 *(전방 모터, 중앙 쿨러, OLED 위치 표시)*
 
-![로봇 이동 제어 흐름](docs/flow_move_control.jpg)
+![로봇 이동 제어 흐름]<img width="1253" height="812" alt="image" src="https://github.com/user-attachments/assets/d64d9d11-34a8-4132-876f-fa0a60529b13" />
+
 *(컨트롤러 입력 → 아두이노 제어 → 모터 구동 과정)*
 
-![OLED 거리 표시](docs/oled_distance.jpg)
+![OLED 거리 표시]<img width="522" height="272" alt="image" src="https://github.com/user-attachments/assets/eb3ab758-c8b4-407b-bf60-fb77e2998ac6" />
+
 *(OLED에 실시간 거리값 및 방향 정보 표시)*
 
 ---
