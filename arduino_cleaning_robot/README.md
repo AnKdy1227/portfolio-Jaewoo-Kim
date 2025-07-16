@@ -41,14 +41,21 @@
 
 ---
 
+
+
 ## 🛠 실행 / 사용 방법
 1. Arduino IDE에서 `cleaning_robot.ino` 파일을 열기
 2. Arduino MEGA 보드를 PC와 연결 후 코드 업로드
 3. 로봇 전원 공급 후, 모드를 선택하여 테스트
    - **수동 모드**: 컨트롤러로 직접 조종
    - **자율주행 모드**: 장애물을 감지하고 회피하며 청소 수행
-
 ---
+## 🔧 필요 라이브러리
+아래 라이브러리들을 Arduino IDE의 Library Manager에서 설치한 뒤 사용하세요.
+- Adafruit GFX Library
+- Adafruit SSD1306
+- AFMotor (Adafruit Motor Shield)
+- PS2X_lib
 
 ## 📷 결과물
 > 아래 이미지는 프로젝트 당시 발표 자료 일부를 발췌한 것입니다.
