@@ -1,0 +1,10 @@
+# .gitignore
+# ignore All
+*
+!*/
+
+# Allow list
+!.gitignore
+!.gitattributres
+!*.v
+!*.xdc
