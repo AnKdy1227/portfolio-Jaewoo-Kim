@@ -12,7 +12,7 @@ Portfolio of hardware &amp; embedded projects.
 | [Verilog 신호등 시뮬레이터](./verilog_traffic) | Verilog, FSM | FPGA 기반 신호등 시뮬레이션 |
 | [STM32 활용 프로젝트](./stm32_project) | STM32, C | 30kV급 파워서플라이용 임베디드 제어 시스템 |
 | [아두이노 청소로봇](./arduino_cleaning_robot) | Arduino, C | 초음파 센서 기반 주행 로봇 |
-| [리눅스 디바이스 드라이버 & 앱](./MCU_puzzle_project) | C, Linux, Android, Java | 실습 프로젝트 |
+| [리눅스 디바이스 드라이버 & 앱](./MCU_Puzzle_project) | C, Linux, Android, Java | 실습 프로젝트 |
 
 ---
 
