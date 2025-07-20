@@ -107,13 +107,17 @@
   - 앱 실행 화면 캡처, 퍼즐 플로우차트
   *(사진찍음)*
   <img width="551" height="364" alt="image" src="https://github.com/user-attachments/assets/129cce46-4cd1-4561-8c0f-a0c20edeb56f" />
-  !*(해당 사진에 대해 랜덤한 이미지 처리가 적용된 조각들 생성)*
+  
+  *(해당 사진에 대해 랜덤한 이미지 처리가 적용된 조각들 생성)*
 <img width="670" height="382" alt="image" src="https://github.com/user-attachments/assets/b53c915d-b539-4f83-86fb-ced22e83ec9f" />
-  !*(선택된 퍼즐 조각 회전, 슬롯에 넣기)*
+
+  *(선택된 퍼즐 조각 회전, 슬롯에 넣기)*
 <img width="756" height="455" alt="image" src="https://github.com/user-attachments/assets/ea0633c9-e86a-45f3-94de-b41d16d2e789" />
-  !*(퍼즐을 잘못 맞춘 경우 리셋)*
+
+ *(퍼즐을 잘못 맞춘 경우 리셋)*
 <img width="409" height="572" alt="image" src="https://github.com/user-attachments/assets/93af10b9-9061-4aa4-805f-b4f85c44e87d" />
-  !*(알맞게 맞춘 경우 결과 처리)*
+
+  *(알맞게 맞춘 경우 결과 처리)*
 <img width="292" height="415" alt="image" src="https://github.com/user-attachments/assets/60184638-9139-4b7d-85ba-de3d587fa272" />
 
 
