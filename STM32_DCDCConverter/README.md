@@ -5,9 +5,13 @@
 - **역할**: STM32 펌웨어 개발 & Altium PCB 설계
 - **기술 스택**: STM32F103, C (HAL), UART, PWM, ADC, Altium Designer, EMI 분석
 
-이 프로젝트는 **입력 전압 30 V를 30 kV로 승압하는 고전압 파워서플라이**를 설계하고 제작한 결과물입니다.  
-**STM32 → 푸시풀(Push‑Pull) 컨버터 → Cockcroft–Walton(CW) 볼티지 멀티플라이어** 로 구성된 시스템이며,  
-기존 아날로그 PWM IC의 회로를 참고하여 **STM32 기반으로 소프트스타트와 피드백 기능을 구현**했습니다.
+이 프로젝트는 30 V의 입력 전압을 약 30 kV로 승압하기 위한 고전압 파워서플라이를 설계하고 제작한 결과물입니다.
+시스템은 STM32를 이용한 디지털 제어부, 푸시풀(Push‑Pull) 컨버터를 통한 1차 승압부,
+그리고 Cockcroft–Walton(CW) 전압 멀티플라이어를 통한 2차 승압부로 구성됩니다.
+기존 아날로그 PWM IC를 대체하여 STM32에서 PWM 생성, 소프트스타트, 피드백 제어를 직접 구현하여
+보다 유연하고 확장 가능한 제어가 가능하도록 설계했으며,
+안전한 실험 환경을 위해 HC‑05 블루투스를 통한 무선 제어 및 출력 전압 모니터링 기능을 구현하고,
+고전압 부품과 회로는 에폭시 몰딩을 적용하여 절연과 방전 방지를 강화했습니다.
 
 ---
 
@@ -16,6 +20,27 @@
 - **푸시풀 컨버터**: 변압기로 약 60배 승압
 - **CW 회로(전압 멀티플라이어)**: 약 20배 승압
 - **출력**: 약 30 kV DC
+
+### 🔹 Push‑Pull Converter
+- **역할**:  
+  입력 DC 전압(30 V)을 트랜스포머를 통해 고주파 스위칭하여 약 60배 승압.
+- **특징**:  
+  - 두 개의 MOSFET을 교대로 구동해 트랜스포머의 코어 활용률을 높임  
+  - 스위칭 손실과 전압/전류 피크를 줄여 높은 전력 효율 달성  
+  - 작은 크기에서도 높은 전압 확보 가능
+  - 
+### 🔹 Cockcroft–Walton (CW) Voltage Multiplier
+- **역할**:  
+  Push‑Pull 컨버터의 출력 AC 전압을 단계적으로 정류·승압하여 약 20배 추가 승압.
+- **특징**:  
+  - n단(Stage)일수록 전압이 n배로 상승  
+  - 소형 부품으로 고전압 설계 가능  
+  - 전류보다 전압이 중요한 응용(EMP용 고전압 공급)에 최적화  
+  - 소자 간 전계 분산 및 절연 거리 확보가 유리
+ 
+  ✅ **최종 출력**:  
+30 V → (Push‑Pull ×60) → (CW Multiplier ×20) → **약 30 kV DC**
+  - 이후 피드백 제어를 통해 30kV 유지
 
 ---
 
@@ -74,15 +99,26 @@
 ## 📷 결과물
 > (오실로스코프 PWM 파형, PCB 3D 뷰, 제작된 기판 사진 등을 첨부하면 좋습니다)
 
-![PCB 3D Simulation](docs/pcb_3d.png)
+![PCB 3D Simulation]<img width="2110" height="404" alt="image" src="https://github.com/user-attachments/assets/f707e8d5-0584-4379-aecd-ba87ce1d4d34" />
+<img width="2091" height="389" alt="image" src="https://github.com/user-attachments/assets/2dc717f4-309b-4ad0-b0ca-8c4991d0136e" />
 *(Altium Designer 3D 뷰)*
+<img width="2294" height="422" alt="image" src="https://github.com/user-attachments/assets/6f4ad600-6058-4837-ba74-636748368ea1" />
 
-![PWM waveform](docs/pwm_waveform.png)
+![PWM waveform]<img width="571" height="425" alt="image" src="https://github.com/user-attachments/assets/4064d706-c50d-44b4-876c-f9ef46c8ec4d" />
 *(STM32 TIM1/TIM2 Dead-Time PWM 파형)*
 
-![Gate Driver PWM](docs/gate_driver_waveform.png)
+![Gate Driver PWM]<img width="533" height="397" alt="image" src="https://github.com/user-attachments/assets/75407f39-e1ad-4f07-b18e-8349b37b0593" />
+
 *(게이트 드라이버를 통과한 CH1/CH1N PWM 파형 – 데드타임이 적용된 모습)*
 
+![LTspice Simulation]<img width="2639" height="827" alt="image" src="https://github.com/user-attachments/assets/46f46eef-5743-4878-82eb-a77567628b7f" />
+
+*(LTspice에서 푸시풀 컨버터 및 CW 회로 시뮬레이션으로 출력 전압 특성 검증)*
+
+![PWM control interface]<img width="716" height="339" alt="image" src="https://github.com/user-attachments/assets/f0dd3fd6-3428-4dae-8c33-b2b2351aefec" />
+![Uploading image.png…]()
+
+*(HC‑05 블루투스를 통한 UART 통신 결과 – 스마트폰 앱에서 PWM 시작/정지 및 전압 모니터링)*
 ---
 
 ## ✨ 담당 및 성과
