@@ -89,7 +89,7 @@
 ---
 
 ## 🛠 실행 / 사용 방법
-1. STM32CubeIDE에서 `main.c` 프로젝트 빌드 및 다운로드
+1. STM32CubeIDE에서 bleControl 프로젝트 빌드 및 다운로드
 2. 30 V 입력 전원을 PCB에 공급
 3. 스마트폰 → HC-05 블루투스 연결
 4. UART 명령으로 PWM **Start/Stop** 제어 및 전압 모니터링
@@ -114,10 +114,22 @@
 *(LTspice에서 푸시풀 컨버터 및 CW 회로 시뮬레이션으로 출력 전압 특성 검증)*
 
 ![PWM control interface]<img width="716" height="339" alt="image" src="https://github.com/user-attachments/assets/f0dd3fd6-3428-4dae-8c33-b2b2351aefec" />
-![Uploading image.png…]()
+<img width="538" height="130" alt="image" src="https://github.com/user-attachments/assets/33437666-6dbc-4709-aeed-531fe7322219" />
 
 *(HC‑05 블루투스를 통한 UART 통신 결과 – 스마트폰 앱에서 PWM 시작/정지 및 전압 모니터링)*
+
+몰딩전 피드백 핀의 전압 측정
+<img width="453" height="111" alt="image" src="https://github.com/user-attachments/assets/28ae6e7f-a492-402c-baf7-9a77490c86ee" />
+(750Meg+0.1Meg+0.05Meg)/0.05Meg -> 15003배
+15003*1.07 -> 약 16kV
+
+몰딩 후 전압
+15003*1.96 -> 약 29kV
+![Uploading image.png…]()
+
 ---
+
+
 
 ## ✨ 담당 및 성과
 ✅ **STM32 펌웨어 개발**
