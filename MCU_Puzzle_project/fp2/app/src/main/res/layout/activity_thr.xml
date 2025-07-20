@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Puzzle Game"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black" />
+
+    <!-- 타이틀 -->
+    <TextView
+        android:id="@+id/result_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Result"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black" />
+
+    <!-- 원본 사진과 퍼즐 완성 사진 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- 원본 사진 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray">
+
+            <ImageView
+                android:id="@+id/original_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="Original Image" />
+        </FrameLayout>
+
+        <!-- 퍼즐 완성 사진 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:layout_marginStart="8dp">
+
+            <ImageView
+                android:id="@+id/completed_puzzle_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="Completed Puzzle Image" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 총 걸린 시간 -->
+    <TextView
+        android:id="@+id/time_taken_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Total time: 00:00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black" />
+
+    <!-- 돌아가기 버튼 -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="Try again"
+        android:textSize="16sp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@android:color/white"
+        android:elevation="4dp" />
+
+    <!-- 새로운 이미지 추가 -->
+    <ImageView
+        android:id="@+id/additional_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ddabong"
+    android:contentDescription="Additional Image" />
+
+</LinearLayout>
