@@ -97,8 +97,6 @@
 ---
 
 ## 📷 결과물
-> (오실로스코프 PWM 파형, PCB 3D 뷰, 제작된 기판 사진 등을 첨부하면 좋습니다)
-
 ![PCB 3D Simulation]<img width="2110" height="404" alt="image" src="https://github.com/user-attachments/assets/f707e8d5-0584-4379-aecd-ba87ce1d4d34" />
 <img width="2091" height="389" alt="image" src="https://github.com/user-attachments/assets/2dc717f4-309b-4ad0-b0ca-8c4991d0136e" />
 *(Altium Designer 3D 뷰)*
