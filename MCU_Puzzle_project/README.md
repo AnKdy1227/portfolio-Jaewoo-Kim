@@ -50,17 +50,16 @@
 ---
 
 ## ⚙️ 시스템 흐름
-[ Camera Capture ]
-↓ (MainActivity)
-[ Image Processing (OpenCL, CPU) ]
-↓ (Intent Extra)
-[ PuzzleActivity: 퍼즐 조립 + Timer ]
-↓ (JNI)
-[ 7-Segment Hardware Timer Display ]
-↓
-[ ResultActivity: 결과 이미지 + 시간 표시 ]
+- Camera Capture  
+- ↓ (MainActivity)  
+- Image Processing (OpenCL, CPU)  
+- ↓ (Intent Extra)  
+- PuzzleActivity: 퍼즐 조립 + Timer  
+- ↓ (JNI)  
+- 7-Segment Hardware Timer Display  
+- ↓  
+- ResultActivity: 결과 이미지 + 시간 표시
 
----
 ## 🛠 실행 방법
 ### ▶️ 앱 빌드
 - Android Studio에서 프로젝트 열기
