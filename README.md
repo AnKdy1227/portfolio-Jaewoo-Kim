@@ -14,7 +14,7 @@ Portfolio of hardware &amp; embedded projects.
 | [아두이노 청소로봇](./arduino_cleaning_robot) | Arduino, C | 초음파 센서 기반 주행 로봇 |
 | [리눅스 디바이스 드라이버 & 앱](./MCU_Puzzle_project) | C, Linux, Android, Java | 실습 프로젝트 |
 | [Elevator 구현 프로젝트](./Elevator) | STM32, C | 실습 프로젝트 |
-| [디지털 필터 실습](./MCU_Puzzle_project) | C, MATLAB, STM32 | 실습 프로젝트 |
+| [디지털 필터 실습](./Digital_filter) | C, MATLAB, STM32 | 실습 프로젝트 |
 | [통신 구현](./MCU_Puzzle_project) | STM32, C | 실습 프로젝트 |
 
 ---
