@@ -60,31 +60,6 @@
 
 ---
 
-## 🧠 System Architecture
-
-### 🟢 Bare-metal 구조
-
-```c
-while(1)
-{
-    Read_Floor_Sensor();
-    Process_Keypad();
-    Algorithm_Loop();
-}
-```
-
----
-
-### 🔵 RTOS 구조
-
-```c
-[Key Input Task] → Queue → [Elevator Control Task]
-                          ↓
-                      Shared State (Mutex)
-```
-
----
-
 ## ⚙️ Key Features
 
 ### 🎯 Elevator Control Algorithm
