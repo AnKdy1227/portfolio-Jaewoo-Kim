@@ -117,7 +117,7 @@ cleaning_robot_stm32.c
    - TIM5 us 단위 카운터 (초음파 echo 폭 측정용)
    - I2C1 (OLED), GPIO (초음파 Trig/Echo, PS2, 부저)
 2. **펌웨어 빌드 및 플래시**
-   - STM32CubeIDE에서 `cleaning_robot_stm32.c` 를 프로젝트에 추가하여 빌드
+   - STM32CubeIDE에서 `cleaning_robot.c` 를 프로젝트에 추가하여 빌드
    - ST-Link로 보드에 플래시
 3. **동작 모드 선택**
    - 기본은 수동 모드. **SELECT** 로 자율주행 ON/OFF
